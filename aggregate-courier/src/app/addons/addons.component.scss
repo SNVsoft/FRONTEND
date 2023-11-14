@@ -1,0 +1,12 @@
+.addon-card{
+    width:200px;
+}
+.parent{
+   display: flex; 
+   flex-flow: wrap row;
+   align-items: center;
+   justify-content: center;
+   column-gap: 20px;
+   row-gap: 20px;
+   padding: 2rem;
+}
