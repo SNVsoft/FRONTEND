@@ -1,0 +1,63 @@
+<mat-sidenav-container class="sidenav-container" >
+  <mat-sidenav #drawer class="sidenav" fixedInViewport
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="(isHandset$ | async) === true" >
+    <mat-toolbar>Menu</mat-toolbar>
+    <mat-nav-list>
+      <a mat-list-item href="#">Link 1</a>
+      <a mat-list-item href="#">Link 2</a>
+      <a mat-list-item href="#">Link 3</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar style="position: sticky;background: white;">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+     
+        *ngIf="isHandset$ | async">
+        
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <img src="./assets/Joprodexcourier.png" alt="" style="width:200px;height: 70px;" >
+         <div class="nav-container" *ngIf="nav.visible" >
+         
+         
+       
+          <button mat-flat-button><mat-icon color="primary">home</mat-icon>Home</button>
+          <button mat-flat-button routerLink="domestic"><mat-icon color="primary" >language</mat-icon>Domestic</button>
+          <button mat-flat-button routerLink="/international">International</button>
+          <button mat-flat-button routerLink="/warehouse">Warehouse</button>
+          <button mat-flat-button routerLink="/about-us">about Us</button>
+      </div>
+    
+      <div class="btn-container" *ngIf="nav.visible">
+      <button mat-raised-button color="accent" routerLink="/login" >login</button>&nbsp;&nbsp;&nbsp;
+      <button mat-raised-button color="warn" routerLink="/register">Register</button>
+   
+    </div>
+    <!-- <div *ngIf="nav1.visible" class="btn-container1">
+    <button mat-raised-button color="warn" (click)="onLogout()" >Logout</button>
+  </div> -->
+  <div *ngIf="nav1.visible" class="btn-container1" >
+   
+<mat-menu #menu="matMenu">
+  <button mat-menu-item>Profile</button>
+  <button mat-menu-item>Settings</button>
+  <button mat-menu-item color="warn" (click)="onLogout()" >Logout</button>
+</mat-menu>
+
+  <img [matMenuTriggerFor]="menu" [src]="url ? url : 'https://static.toiimg.com/thumb/msid-99293204,imgsize-22099,width-400,resizemode-4/99293204.jpg'" width="60px" style="border-radius: 20px;"> <br/>
+<!-- <input type='file' (change)="onSelectFile($event)"> -->
+</div>
+
+<mat-icon color="primary">translate</mat-icon>
+    </mat-toolbar>
+    <!-- Add Content Here -->
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+
+</mat-sidenav-container>
+

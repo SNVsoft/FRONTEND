@@ -1,0 +1,27 @@
+.footer-parent {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    column-gap: 20px;
+    row-gap: 10px;
+  }
+  
+  .footer-child {
+    width: 250px;
+    height: 210px;
+  }
+
+  .footer-container {
+    background-color: #dee0e3;
+    padding: 10%;
+  
+  }
+  .links-social{
+    margin-left: 10px;
+  }
+  .logo{
+    width:200px;
+    height: 50px;
+}

@@ -1,0 +1,82 @@
+.blog-intro-container{
+    display: flex;
+    flex-flow: wrap row;
+    align-items: center;
+    justify-content: center;
+}
+.blog-intro-img{
+    width: 100%;
+    height: 400px;
+}
+.blog-content{
+    margin-top: -350px;
+    z-index: 100;
+    color: white;
+    font-size: 30px;
+    line-height: 1.2;
+}
+.domestic-shipping-p{
+    display: flex;
+    flex-flow: wrap row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+.example-card {
+   width: 300px;
+   height: 350px;
+  }
+  .global-shipping-p{
+    display: flex;
+    flex-flow: wrap row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+    row-gap: 20px;
+    padding: 2%;
+}
+.example-card1 {
+    width: 350px;
+    height: 400px;
+   }
+   .warehouse-p{
+    display: flex;
+    flex-flow: wrap row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+    row-gap: 20px;
+    padding: 2%;
+   }
+  .footer-container{
+    height: 400px;
+    background: rgb(124, 124, 245);
+  }
+  .footer-p{
+    display: flex;
+    flex-flow: wrap row;
+    align-items: center;
+    justify-content: space-evenly;
+    column-gap: 20px;
+    row-gap: 20px;
+    padding: 2%;
+  }
+  .footer-child{
+    width: 250px;
+    height: 300px;
+    background: transparent;
+    border:transparent;
+  }
+  @media screen and (max-width:400px) {
+    .footer-container{
+        height: 85rem;
+        background: rgb(124, 124, 245);
+      }
+  }
+  @media screen and (max-width:400px) {
+    .footer-container{
+        height: 85rem;
+        background: rgb(124, 124, 245);
+      }
+  }

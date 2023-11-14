@@ -1,0 +1,40 @@
+
+<div class="split left" >
+  <div class="centered">
+<div class="signin-card">
+    <img class="img"  src="https://golocad.com/wp-content/uploads/2022/10/3PL-Provider-SG.webp">
+  </div>
+  </div>
+
+  <div class="split right">
+    <div class="centered">
+<mat-card class="card-l">
+  <img src="./assets/Joprodexcourier.png" alt="" style="width:200px;height: 70px;" >
+        <form class="example-form" [formGroup]="loginForm" >
+            <mat-form-field class="form-field" appearance="outline">
+              <mat-label>Enter your email</mat-label>
+              <input type="email" matInput placeholder="pat@example.com" formControlName="email" required>
+             
+            </mat-form-field>
+         
+          <mat-form-field  class="form-field" appearance="outline">
+            <mat-label>Enter your password</mat-label>
+            <input type="password" matInput [type]="hide ? 'password' : 'text'" formControlName="password">
+            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+              <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+          </mat-form-field>
+          <button mat-flat-button (click)="openDialog()">forget password</button>
+            
+<br>
+                <button mat-raised-button color="primary"  (click)="login()" >Login</button>
+              <p>Don't have account register here</p><a routerLink="/register" style="text-decoration: none;">Register here</a>
+             
+          </form>
+  
+  
+  </mat-card>
+</div>
+</div>
+</div>
+

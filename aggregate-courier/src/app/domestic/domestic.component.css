@@ -1,0 +1,137 @@
+.domestic-img{
+    width:100%;
+}
+.client-p {
+    display:flex;
+    flex-flow: wrap row;
+    align-items: center;
+    justify-content:center ;
+    column-gap: 20px;
+    row-gap: 20px;
+    text-align: center;
+    
+}
+.client-values-p{
+    display:flex;
+    flex-flow: wrap row;
+    align-items: center;
+    justify-content:center ;
+    column-gap: 20px;
+    row-gap: 20px;
+    padding: 2%;
+    text-align: center;
+    border: 2px solid whitesmoke;
+    background: white;
+    margin-top: -100px;
+    border-radius: 20px;
+    box-shadow: 2px 4px whitesmoke;
+    
+}
+.client-c{
+    width: 1000px;
+    height: 100px;
+    
+    
+}
+.client-form-c{
+    width: 1000px;
+    height: 200px;
+    font-size:6px;
+   
+}
+.client-values-c{
+    width: 150px;
+    height: 120px;
+    font-size:-6px;
+
+    
+}
+.btn:hover{
+    background-color:blue ;
+    
+}
+.steps-p{
+    display:flex;
+    flex-flow: wrap row;
+    align-items: center;
+    justify-content:center ;
+    column-gap: 20px;
+    row-gap: 20px;
+    text-align: center;
+   
+}
+.steps-details-p{
+    display:flex;
+    flex-flow: wrap row;
+    align-items: center;
+    justify-content:center ;
+    column-gap: 20px;
+    row-gap: 20px;
+    padding:2%;
+    
+}
+.steps-c{
+    text-align: center;
+}
+.steps-details-c{
+    width:250px;
+    height:300px;
+    background: rgb(222, 188, 163);
+    font-size:400px;
+    
+    
+}
+.btn:hover{
+    background-color:red ;
+    
+}
+.steps-p{
+    display:flex;
+    flex-flow: wrap row;
+    align-items: center;
+    justify-content:center ;
+    column-gap: 20px;
+    row-gap: 20px;
+    text-align: center;
+    padding: 2%;
+}
+.steps-details-p{
+    display:flex;
+    flex-flow: wrap row;
+    align-items: center;
+    justify-content:center ;
+    column-gap: 20px;
+    row-gap: 20px;
+  
+}
+.steps-c{
+    text-align: center;
+   
+}
+.why-Choose-c{
+    width: 300px;
+    height: 300px;
+    font-size:20px;
+}
+.customer-p{
+    display:flex;
+    flex-flow: wrap row;
+    align-items: center;
+    justify-content:center ;
+    column-gap: 20px;
+    row-gap: 20px;
+    text-align: center;
+    padding: 2%;
+}
+
+
+.customer-c{
+    width:500px;
+    height:200px;
+    
+   
+}
+.btn{
+    background: black;
+    color: white;
+}

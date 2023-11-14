@@ -1,0 +1,43 @@
+<mat-sidenav-container class="sidenav-container">
+    <mat-sidenav #drawer class="sidenav" fixedInViewport
+        [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+        [mode]="(isHandset$ | async) ? 'over' : 'side'"
+        [opened]="(isHandset$ | async) === false">
+      <mat-toolbar style="background:white; ">Joprodex </mat-toolbar>
+      <mat-nav-list style="color: white;">
+        <a mat-list-item class="nav" href="#">Dashboard</a> 
+        <a mat-list-item class="nav" routerLink="/b2b">Orders</a>
+        <a mat-list-item class="nav" href="#">Shipments</a>
+        <a mat-list-item class="nav" href="#">Exception (NDR)</a>
+        <a mat-list-item class="nav" href="#">Weight Reco.</a>
+        <a mat-list-item class="nav" href="#">Billing</a>
+        <a mat-list-item class="nav" href="#">Reports</a>
+        <a mat-list-item class="nav" href="/addons">Addons</a>
+        <a mat-list-item class="nav" href="/settings">Settings</a>
+        <a mat-list-item class="nav" href="#">Support</a>
+        <a mat-list-item class="nav" href="#">Serviceable pincodes</a>
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <button
+      type="button"
+      aria-label="Toggle sidenav"
+      mat-icon-button
+      (click)="drawer.toggle()"
+    >
+      <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+    </button>
+    <mat-grid-list cols="4" rowHeight="300px" style="padding:50px;">
+        <mat-grid-tile
+            *ngFor="let tile of tiles"
+            [colspan]="tile.cols"
+            [rowspan]="tile.rows"
+            [style.background]="tile.color" style="border-radius: 20px;padding: 5px;">
+         <img src="{{tile.img}}" alt="" style="width: 100px;"> 
+         {{tile.text}}
+        </mat-grid-tile>
+      </mat-grid-list>
+      
+  
+    </mat-sidenav-content>
+  </mat-sidenav-container>
