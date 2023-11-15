@@ -25,6 +25,7 @@ import { SettingsComponent } from './settings/settings.component';
 import { AddonsComponent } from './addons/addons.component';
 import { BillingComponent } from './billing/billing.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
+import { B2bComponent } from './b2b/b2b.component';
 
 const routes: Routes = [
   {path:'domestic',component:DomesticComponent},
@@ -48,6 +49,7 @@ const routes: Routes = [
   {path:'web',component:WebComponent},
   {path:'billing',component:BillingComponent},
   {path:'about-us',component:AboutusComponent},
+  {path:'b2b',component:B2bComponent},
   // {path:'admin',component:AdminLayoutComponent,children:[
   //   {path:'dashboard',loadChildren:()=>import('./views/admin/dashboard/dashboard.module').then(m=>m.DashboardModule)},
   //   {path:'loginadmin',loadChildren:()=>import('./views/admin/loginadmin/loginadmin.module').then(m=>m.LoginadminModule)}

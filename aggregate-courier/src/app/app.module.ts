@@ -88,6 +88,10 @@ import { DomesticComponent } from './domestic/domestic.component';
 import { WarehouseComponent } from './warehouse/warehouse.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { BlogComponent } from './blog/blog.component';
+import { B2bComponent } from './b2b/b2b.component';
+import { B2cShipmentsComponent } from './b2c-shipments/b2c-shipments.component';
+import { CreateTicketComponent } from './create-ticket/create-ticket.component';
+import { TrainingComponent } from './training/training.component';
 
 @NgModule({
   declarations: [
@@ -118,7 +122,11 @@ import { BlogComponent } from './blog/blog.component';
     SupportsComponent,
     ServicepincodesComponent,
     AboutusComponent,
-    BlogComponent
+    BlogComponent,
+    B2bComponent,
+    B2cShipmentsComponent,
+    CreateTicketComponent,
+    TrainingComponent
 
   ],
   imports: [
